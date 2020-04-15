@@ -1,0 +1,12 @@
+.column {
+    float: left;
+    width: 33.3%;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#col1 {
+}

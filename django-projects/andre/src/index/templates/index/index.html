@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  </head>
+
+  <body>
+    <div class="jumbotron text-center">
+
+      <h1>Hi ich bin Andre und das ist meine sehr coole Website</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://de.linkedin.com/in/andre-schwab-9874b6109">LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.xing.com/profile/Andre_Schwab3">Xing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sonst</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hier</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nix</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Zu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sehen</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="row">
+
+      <div class="column bg-secondary" id="col1">
+        <div class="container" align="left">
+          <div class="col-8 offset-2">
+            <h1>Meine Talente</h1>
+            Ich kann
+            <ul>
+              <li>Bier trinken</li>
+              <li>Labern</li>
+              <li>Feiern</li>
+              <li>Ski fahren</li>
+              <li>Tindern</li>
+              <li>Pizza backen</li>
+              <li>Viel labern</li>
+              <li>Rumpimmeln</li>
+              <li>Umziehen</li>
+              <li>Hab ich labern erwähnt?</li>
+            </ul>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter">
+              Bitte nicht hauen
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Aua</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Das tat voll weh!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="column bg-light" id="col2">
+        <div class="container" id="ausbildung">
+          <h1>Ausbildung</h1>
+          Ich bin sehr lange in den Kindergarten gegangen, weil meine Betreuerin fand ich sei noch nicht reif für 
+          die Grundschule. Die fand mich vielleicht auch ein bisschen süß (So wie auf dem Foto hab ich schon damals ausgesehen).
+          Auf dem Gymnasium habe ich dann die Zeit genutzt, um richtig krasse Parties zu schmeißen. Irgendso ne krasse Story 
+          mit nem krassen Pferd... Erinner mich nicht mehr so gut. Naja egal. Studiert hab ich auch. Maschinenbau.
+          Weiß gar nicht mehr, wie ich das geschafft habe. Aber irgendwie habe ich damit doch einen Job bei Hyundai bekommen.
+          Und da bin ich seitdem krass am abschimmeln.
+        </div>
+        <div class="container" id="friends">
+          <h1>Meine Freunde</h1>
+          Leider habe ich nur einen Freund. Sein Name ist Niklas.
+          Er ist der einzige Mensch, der zu mir hält, egal wie schlimm unaufgeräumt meine Bude wieder ist.
+          In der Not steht er einem immer bei. Nur zum Squash wollte er mich nicht mitnehmen. Schnief.
+          <br>
+        </div>
+      </div>
+
+      <div class="column bg-info" id="col3">
+        <div class="container-fluid ml-200" id="imageContainer" align="center">
+          <h1>Meine Schokoladenseite</h1>
+          <img src="{% static "img/andre.jpg" %}" alt="Andre schlechter Tag" style="width:225px;height:375px;">
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

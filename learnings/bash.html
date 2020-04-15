@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1>My Learnings</h1>
+      <p>On this page I will document my learnings of the past months</p>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <h1>Linux commands</h1>
+
+        <div class="container">
+          <h3>grep</h3>
+          grep handles basic regex (BREs)<br>
+          egrep handles extended regex (EREs)<br>
+          <code>-H</code> Always print filename headers<br>
+          <code>-i</code> ignore case<br>
+          <code>-J</code> Decompress bzip2 before looking<br>
+          <code>-n</code> line number<br>
+          <code>-e</code> match pattern, usefull with multiple patterns (matches if one matches)<br>
+          <code>-x</code> uses exact matches<br>
+          <code>-F</code> fixed string instead of pattern<br>
+          <code>grep '^p'</code> greps all lines with the character p at the beginning<br>
+        </div>
+
+        <div class="container">
+          <h3>sed (stream editor)</h3>
+          Get range of lines: <code>sed -n '2,4p' filename</code><br \>
+          Substitute str1 for str2 in the whole file: <code>sed -e 's/str1/str2/g' filename</code><br \>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3>awk (Aho, Weinberger, Kernighan)</h3>
+        basic program: <code>awk 'BEGIN{} {} END{}'</code><br>
+        Print column 5 and 9: <code>awk '{print $5,$9}'</code><br>
+        $0 refers to entire line<br>
+        <code>\t</code> = tab, <code>\n</code> = newline<br>
+        <code>awk -f</code> process a file<br>
+        <h4>Built in variables</h4>
+        <p>
+          <code>(O)FS</code> = (Output) field separator, Default is Spaces<br> 
+          <code>NR</code> = Number of processed records<br>
+          <code>FNR</code> = Number of records relative to file<br>
+          <code>NF</code> = Number of fields, Use <code>$NF-X</code> to get xth last column<br>
+          <code>(O)RS</code> = (Output) record separator<br>
+          <code>FILENAME</code> = refers to input filename<br>
+        </p>
+        <h4>Additional stuff</h4>
+        <p>
+          <code>awk '/Tom/Dan/' file</code> to get lines with Tom or Dan
+          <code>awk '$1 ~/regex/' file</code> to use regex
+        </p>
+      </div>
+
+      <div class="container">
+        <h3>conditions</h3>
+        <h4>primaries of test command</h4>
+        <code>[-a file]</code> Checks for file<br>
+        <code>[-e file]</code> Checks for file<br>
+        <code>[-a dir]</code> Checks for dir<br>
+        <code>[-f file]</code> Checks for regular file<br>
+        <code>[-h file]</code> Checks for sym link<br>
+        <code>[-s file]</code> Checks for file &gt 0<br>
+        <code>[-w/-x file]</code> Checks for writable/executable file<br>
+        <code>[STRING]</code> Checks for string > 0<br>
+        <code>[-z str]</code> Checks for string = 0<br>
+        <code>[str1 ==/!=/&lt/&gt str2]</code> Compares to strings <br>
+        <code>[str1 -eq/-ne/-lt/-gt str2]</code> Same as above<br>
+        <code>[expr1 -a expr2]</code> Checks if both expressions are true<br>
+        <code>[expr1 -o expr2]</code> Checks if one expression is true<br>
+        <h4>other</h4>
+        <code>$?</code> = Exit status of last command<br>
+        <code>$#</code> = Number of arguments<br>
+        <code>if, then, elif, else, fi</code> to use conditionals<br>
+      </div>
+
+    </div>
+  </body>
+</html>
