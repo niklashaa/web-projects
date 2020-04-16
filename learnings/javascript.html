@@ -10,6 +10,45 @@
 
   </head>
   <body>
+    Object: Collection of name value pairs
+    There is always a global object (Window in the browser)
+    Global = Not inside a function
+    Variables and functions get attached to the global object
+    Hoisting: Setup memory space for variables and functions (Before the code is actually executed)
+      Functions are hoisted completely
+      Variables just get "undefined as a placeholder
+    Never set a variable to undefined!
+      It would be hard to tell who set it to undefined, you or the engine
+    Invocate a function with paranthesis()
+    Every execution context has a reference to its outer context
+      Is defined where the function sits lexically 
+    Asynchronous callbacks are possible because the browser can execute stuff
+    in parallel to the JS script being executed
+
+    Primitive type: A type of data that represents a single value (not an object):
+    - undefined
+    - null
+    - boolean
+    - number (floating point)
+    - string
+    - symbol
+
+    Operator precedence: Determines which operator gets executed first
+    Associativity: Determines which operator gets executed first when all have the same precedence
+
+    Dynamic typing: JS engine decides on the type of a parameter at runtime
+    Coercion: Converting a value from one type to another
+
+    To-Do:
+      First Class Functions
+      Callbacks
+      Closures
+      IIFEs
+      call, apply, bind
+      Protoypal inheritance
+      Function constructors
+      Object.create
+      Classes
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
