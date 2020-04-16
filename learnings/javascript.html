@@ -10,45 +10,78 @@
 
   </head>
   <body>
-    Object: Collection of name value pairs
-    There is always a global object (Window in the browser)
-    Global = Not inside a function
-    Variables and functions get attached to the global object
-    Hoisting: Setup memory space for variables and functions (Before the code is actually executed)
-      Functions are hoisted completely
-      Variables just get "undefined as a placeholder
-    Never set a variable to undefined!
-      It would be hard to tell who set it to undefined, you or the engine
-    Invocate a function with paranthesis()
-    Every execution context has a reference to its outer context
-      Is defined where the function sits lexically 
-    Asynchronous callbacks are possible because the browser can execute stuff
-    in parallel to the JS script being executed
+    <h2>Javascript learnings</h2>
 
-    Primitive type: A type of data that represents a single value (not an object):
-    - undefined
-    - null
-    - boolean
-    - number (floating point)
-    - string
-    - symbol
+    <p>
+      <b>Object</b>: Collection of name value pairs <br>
+    </p>
 
-    Operator precedence: Determines which operator gets executed first
-    Associativity: Determines which operator gets executed first when all have the same precedence
+    <p>
+        <b>Global</b> = Not inside a function <br>
+        There is always a global object (Window in the browser) <br>
+        Variables and functions get attached to the global object <br>
+    </p>
 
-    Dynamic typing: JS engine decides on the type of a parameter at runtime
-    Coercion: Converting a value from one type to another
+    <p>
+    <b>Hoisting</b>: Setup memory space for variables and functions (Before the code is actually executed)
+    <ul>
+      <li>Functions are hoisted completely</li>
+      <li>Variables just get "undefined as a placeholder</li>
+    </ul>
+    </p>
 
-    To-Do:
-      First Class Functions
-      Callbacks
-      Closures
-      IIFEs
-      call, apply, bind
-      Protoypal inheritance
-      Function constructors
-      Object.create
-      Classes
+    <p>
+    Never actively set a variable to undefined! <br>
+    It would be hard to tell who set it to undefined, you or the engine <br>
+    Invocate a function with paranthesis() <br>
+    <p>
+
+    <p>
+    Every <b>execution context</b> has a reference to its <b>outer context</b> <br>
+    The outer context is defined where the function sits lexically
+    </p>
+
+    <p>
+    <b>Asynchronous callbacks</b> are possible because the browser can execute stuff <br>
+    in parallel to the JS script being executed (Event loop)
+    </p>
+
+    <p>
+    <b>Primitive Type</b>: A type of data that represents a single value (not an object): <br>
+    <ul>
+        <li>undefined</li>
+        <li>null</li>
+        <li>boolean</li>
+        <li>number (floating point)</li>
+        <li>string</li>
+        <li>symbol</li>
+    </ul>
+    <p>
+
+    <p>
+    <b>Operator precedence</b>: Determines which operator gets executed first <br>
+    <b>Associativity</b>: Determines which operator gets executed first when all have the same precedence
+    </p>
+
+    <p>
+    <b>Dynamic typing</b>: JS engine decides on the type of a parameter at runtime <br>
+    <b>Coercion</b>: Converting a value from one type to another <br>
+    </p>
+
+    <p>
+    <b>To-Do</b>:
+    <ul>
+      <li>First Class Functions</li>
+      <li>Callbacks</li>
+      <li>Closures</li>
+      <li>IIFEs</li>
+      <li>call, apply, bind</li>
+      <li>Protoypal inheritance</li>
+      <li>Function constructors</li>
+      <li>Object.create</li>
+      <li>Classes</li>
+    </ul>
+    </p>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
